@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SOFER - Multilingual Transcription Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="MINISOFER.svg" href="MINISOFER.svg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <div id="lining"></div>
+    <Header>
+        <div id="Topper">
+            <h1 id="logo"><strong>Sofer</strong><img src="SOFER.svg" alt="Scribe stylus next to SOFER logo."><h1>
+            <h2 id="lema"><b>Multilingual Transcription Assistant</b></h2>
+        </div>
+    </Header>
+    <div id="search">
+        <div>
+            <label class="language-left" for="select">Select language</label>
+            <select id="select-left" class="language-left">
+                <option>English</option>
+                <option>Spanish</option>
+                <option>German</option>
+                <option>French</option>
+            </select>
+        </div>
+        <div>    
+            <label class="language-right" for="select">Select language</label>
+            <select id="select-right" class="language-right">
+                <option>English</option>
+                <option>Spanish</option>
+                <option>German</option>
+                <option>French</option>
+            </select> 
+        </div>
+        <span id="linguee"><a href=https://www.linguee.com>Search translation - Powered by Linguee</a></span>
+    </div>
+    <div id="container">
+            <div class="boxes">
+                <textarea id="textarea-left" class="write" name="story" rows="5" cols="33" placeholder="English transcription"></textarea>  
+            </div>
+            <div class="boxes">
+                <textarea id="textarea-right" class="write" name="story" rows="5" cols="33" placeholder="English transcription" resize: none></textarea>
+            </div>
+            <div id="iframe">
+                <iframe src="https://www.linguee.com/" style="border:2px gray solid; " name="myiFrame" scrolling="YES"
+                frameborder="1" marginheight="300px" marginwidth="300px" height="410px" width="400vw"
+                allowfullscreen></iframe>
+            </div>
+    </div>
+    <script src="./main.js">
+    </script>
+</body>
+</html>
